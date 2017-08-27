@@ -35,9 +35,8 @@
 
 			var role = new IdentityRole(name);
 
-			Expect(role.Name, Is.EqualTo("notadmin"));
+			Expect(role.Name, Is.EqualTo(name));
 		}
-#comment
 
 		[Test]
 		public void Create_WithRoleName_SetsId()
